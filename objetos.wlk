@@ -32,6 +32,29 @@ object placa {
  method color(unColor) {color = unColor} //indicación
  method material() {return madera}
  method color() {return color} //consulta
+}//Test
+
+object arito {
+ method peso() {return 180}
+ method color() {return celeste}
+ method material() {return cobre}
+}
+
+object banquito {
+ var color = naranja
+ method peso() {return 1700}
+ method material() {return cobre}
+ method color(unColor){color = unColor}
+ method color(){return color}
+}
+
+object cajita {
+  var objetoAdentro = remera
+  var peso = 400 + objetoAdentro.peso()
+  method color(){return rojo}
+  method material(){return cobre}
+  method guardar(unObjeto){objetoAdentro = unObjeto}
+  method objetoAdentro(){return objetoAdentro}
 }
 
 object rojo{
@@ -39,6 +62,10 @@ object rojo{
 }
 
 object verde{
+  method esFuerte() {return true}
+}
+
+object naranja{
   method esFuerte() {return true}
 }
 

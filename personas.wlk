@@ -2,7 +2,7 @@ import objetos.*
 
 object rosa {
   method leGusta(unObjeto){unObjeto.peso() < 2000}
-}
+}//Test
 
 object estefania {
   method leGusta(unObjeto){unObjeto.color().esFuerte()}
